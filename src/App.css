@@ -1,0 +1,16 @@
+.container{
+  max-width: 700px;
+  margin:10px;
+  padding-left: 0px !important;
+  padding-right:0px !important;
+  border: 1px solid #d9dede;
+  border-radius: 4px; 
+  background: #fff;
+  box-shadow: 1px 2px 5px 0 rgba(52,40,22,.04), 0 1px 2px 0 rgba(53,40,22,.04);
+  height: 100%;
+  box-sizing: inherit;
+}
+
+.row-comment_editor {
+  position:relative;
+}
