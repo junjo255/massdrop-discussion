@@ -41,7 +41,6 @@
     "webpack-cli": "^3.2.3",
     "webpack-dev-server": "^3.1.0"
   },
-  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
   "main": "index.js",
   "repository": {
     "type": "git",
