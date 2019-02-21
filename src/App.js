@@ -51,8 +51,7 @@ class App extends Component {
                 <div class="outer_col">
                   <div
                     class="card card--conversation no_padding col"
-                    name="conversation_card_column"
-                  >
+                    name="conversation_card_column">
                     <div class="conversation conversation--empty">
                       <Discussions discussions={this.state.discussions} />
                       <Reply />

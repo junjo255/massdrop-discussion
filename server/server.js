@@ -8,17 +8,31 @@ const db = require('./db/index.js')
 // console.log(__dirname)
 
 app.use(parser.json());
-app.use(express.static(`${__dirname}/../public`));
+app.use(express.urlencoded({ extended: true }))
+app.use(express.static(path.join(`${__dirname}/../public`)));
 
 
 app.get('/products/:product_id', (req, res) => {
-  res.sendFile(path.join(__dirname, '../public/index.html'));
+  res.sendFile(path.join(__dirname + '/../public/index.html'));
 });
 
-// grabs dirname  /public/index path
-// /api/products/${itemId}/discussions
 
-app.get(`/api/products/:itemId/discussions`, (req, res) => {
+app.get('/messages', (req, res) => {
+  db.all(`SELECT * FROM messages`, 
+    (err, rows)=> {
+      if (err) {
+        console.log(err)
+      } else {
+
+       console.log(rows)
+       
+        res.send(rows)
+      }   
+    }
+  )
+})
+
+app.get(`/api/products/:product_id/discussions`, (req, res) => {
 
   const discussions = req.params.product_id
 
@@ -27,6 +41,8 @@ app.get(`/api/products/:itemId/discussions`, (req, res) => {
        if (err) {
          console.log(err)
        } else {
+
+        console.log(rows)
         
          res.send(rows)
        }   
@@ -34,7 +50,7 @@ app.get(`/api/products/:itemId/discussions`, (req, res) => {
 });
 
 
-let port = 3000;
+let port = 3005;
 
 app.listen(port, function () {
   console.log(`listening on port ${port}`);
@@ -72,3 +88,6 @@ app.listen(port, function () {
 //     res.send(rows)
 //   })
 // })
+
+
+// module.exports = app;

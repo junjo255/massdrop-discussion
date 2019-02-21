@@ -53,7 +53,7 @@ export class Discussion extends Component {
                           datetime="2017-03-23T23:55:35.000Z"
                           title="2017-03-23T23:55:35.000Z"
                         >
-                          2y
+                          {discussion.createdAt}
                         </time>
                       </div>
                     </div>
@@ -61,8 +61,7 @@ export class Discussion extends Component {
                       <div class="row--comment__body comment__body">
                         <div class="rich_content__container">
                           <span class="">
-                            Is the PC37X open-back or closed-back? The PC37X is
-                            an open-back headset.{" "}
+                            {discussion.body}
                           </span>
                         </div>
                       </div>
