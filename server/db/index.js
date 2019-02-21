@@ -1,6 +1,5 @@
 var sqlite3 = require('sqlite3').verbose();
-var faker = require('faker');
-var moment = require('moment');
+// var faker = require('faker');
 
 var db = new sqlite3.Database('massdrop.db', (err)=>{
     if (err){
