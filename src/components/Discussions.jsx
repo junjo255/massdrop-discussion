@@ -18,7 +18,7 @@ export class Discussion extends Component {
                     class="links links--normal links--with_text links--text_only avatar__wrapper_link--root"
                   >
                     <div class="avatar__wrapper comment_owner__avatar--large">
-                      <img alt="" class="responsive responsive_avatar" src="" />
+                      <img alt="" class="responsive responsive_avatar" src={discussion.avatar} />
                     </div>
                   </a>
                   <div class="comment__main">
@@ -71,7 +71,7 @@ export class Discussion extends Component {
                             <i class="icon material-icons material-icon--thumb_up endorsement__icon">
                               thumb_up
                             </i>
-                            <span class="links__text valign_with_icon">0</span>
+                            <span class="links__text valign_with_icon">{discussion.like_count}</span>
                           </span>
                           <span class="links links--action links--with_text comment__reply">
                             <i class="icon material-icons material-icon--reply comment__reply">
