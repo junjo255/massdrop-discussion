@@ -10,6 +10,7 @@ var db = new sqlite3.Database('massdrop.db', (err)=>{
 
 
 
+
 db.serialize(() => {
     db.each('SELECT * FROM user', (err,row) => {
         if(err){

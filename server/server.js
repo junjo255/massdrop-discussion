@@ -50,7 +50,7 @@ app.get(`/api/products/:product_id/discussions`, (req, res) => {
 });
 
 
-let port = 3005;
+let port = process.env.PORT || 3005;
 
 app.listen(port, function () {
   console.log(`listening on port ${port}`);
