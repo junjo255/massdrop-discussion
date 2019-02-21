@@ -1,5 +1,4 @@
-PRAGMA foreign_keys
-=OFF;
+PRAGMA foreign_keys=OFF;
 BEGIN TRANSACTION;
 
 DROP TABLE IF EXISTS 'product';
@@ -74,6 +73,7 @@ DROP TABLE IF EXISTS `messages`;
 CREATE TABLE `messages`
 (
   `id` INTEGER DEFAULT NULL,
+  'product_id' INTEGER NULL DEFAULT NULL,
   `thread_id` INTEGER NULL DEFAULT NULL,
   `createdAt` DATETIME NULL DEFAULT NULL,
   `body` VARCHAR
