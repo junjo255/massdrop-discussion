@@ -4,7 +4,7 @@ import Comment from "./components/Comment.jsx";
 import Search from "./components/Search.jsx";
 import SortBy from "./components/SortBy.jsx";
 import Discussions from "./components/Discussions.jsx";
-// import Reply from "./components/Reply.jsx";
+import Reply from "./components/Reply.jsx";
 import axios from "axios";
 
 class App extends Component {
@@ -53,8 +53,8 @@ class App extends Component {
                     class="card card--conversation no_padding col"
                     name="conversation_card_column">
                     <div class="conversation conversation--empty">
-                      <Discussions discussions={this.state.discussions} />
-                      {/* <Reply /> */}
+                      <Discussions discussions={this.state.discussions}
+                       />
                     </div>
                   </div>
                 </div>
