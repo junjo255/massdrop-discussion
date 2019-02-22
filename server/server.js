@@ -36,7 +36,7 @@ app.get(`/api/products/:product_id/discussions`, (req, res) => {
 
   const discussions = req.params.product_id
 
-  db.all(`SELECT * FROM messages m INNER JOIN user u on u.id = m.sending_user_id INNER JOIN product_threads p on p.thread_id = m.thread_id WHERE p.product_id = "${discussions}"`,
+  db.all(`SELECT * FROM messages m INNER JOIN user u on u.id = m.sending_user_id INNER JOIN product_threads p on p.thread_id = m.thread_id WHERE p.product_id = "${discussions}" ORDER BY m.createdAt ASC`,
     (err, rows) => {
        if (err) {
          console.log(err)

@@ -12,6 +12,10 @@ i, cite, em, var, address, dfn {
     font-style: italic !important;
 }
 
+.card_container {
+    padding-bottom: 10px;
+    margin-top:20px;
+}
 .row-comment_editor {
     position:relative;
 }
@@ -50,12 +54,13 @@ i, cite, em, var, address, dfn {
     margin:10px;
     padding-left: 0px !important;
     /* padding-right:0px !important; */
-    /* border: 1px solid #d9dede; */
+    border: 0px !important;
     /* border-radius: 4px;  */
     background: #fff;
     box-shadow: 1px 2px 5px 0 rgba(52,40,22,.04), 0 1px 2px 0 rgba(53,40,22,.04);
     /* height: 100%; */
     box-sizing: inherit;
+    margin: auto !important;
 }
 
 .comment_field--focused .comment_editor:not(.review_editor--new) .rich_content_editor--focused .ql-editor {
@@ -184,7 +189,9 @@ i, cite, em, var, address, dfn {
     color: #18d7cc;
 
 }
-
+.social_sharing_icon__icon {
+    line-height: 25px  !important ;
+}
 
 
 .communities__filter2--current {
@@ -246,7 +253,7 @@ i, cite, em, var, address, dfn {
 
 
 .content_card {
-    padding: 10px;
+    padding: 20px !important;
 }
 
 .flexItem .input-section {
@@ -1205,6 +1212,7 @@ a.my_list_button>span.link_button--referral>i.icon.icon_button:before, a.my_list
     height:auto;
     background: #fafafa;
     border-radius: 0px;
+    margin-top: -18px !important;
 }
 
 .comment {
