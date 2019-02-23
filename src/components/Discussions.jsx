@@ -3,10 +3,24 @@ import "./stylesheet/style.css";
 import "./stylesheet/iconFonts.css";
 import "./stylesheet/index.css";
 import Reply from "./Reply.jsx";
+import moment from 'moment'
+
 
 export class Discussion extends Component {
+	constructor(props) {
+		super(props);
+		this.state = {
+		  isAdded: false,
+		  comment: props.review,
+		  editorHtml: '',
+		  isEditorShown: false,
+		  quillPlaceholder: 'Add a reply...',
+		};
+	  }
+
 	render() {
 		return (
+			<div>
 			<div className="discussions">
 
 				{this.props.discussions.map((discussion, key) => {
@@ -48,13 +62,8 @@ export class Discussion extends Component {
 														</div>
 													</div>
 													<div class="comment__misc_info_actions">
-														<time
-															class="timestamp comment__timestamp"
-															datetime="2017-03-23T23:55:35.000Z"
-															title="2017-03-23T23:55:35.000Z"
-														>
-															{discussion.createdAt}
-														</time>
+														{moment(discussion.createdAt).startOf('day').fromNow()}
+
 													</div>
 												</div>
 												<div class="comment__display">
@@ -68,16 +77,14 @@ export class Discussion extends Component {
 													<d class="row--comment__footer">
 														<footer class="comment__footer">
 															<span class="links links--action links--with_text endorsement__icon">
-																<i class="icon material-icons material-icon--thumb_up endorsement__icon">
-																	thumb_up
-                            </i>
+															<i className="icon material-icons material-icon--thumb_up endorsement__icon fas fa-thumbs-up"></i>
 																<span class="links__text valign_with_icon">{discussion.like_count}</span>
 															</span>
-															<span class="links links--action links--with_text comment__reply">
-																<i class="icon material-icons material-icon--reply comment__reply">
-																	reply
-                            </i>
-																<span class="links__text valign_with_icon">
+															<span class="links links--action links--with_text comment__reply" onClick={() => {
+              this.setState({ isEditorShown: true });
+            }}>
+																<i class="icon material-icons material-icon--reply comment__reply fas fa-reply"></i>
+																<span class="links__text valign_with_icon" >
 																	Reply
                             </span>
 															</span>
@@ -85,8 +92,8 @@ export class Discussion extends Component {
 																<div class="menu social_sharing_icon__menu">
 																	<div class="menu__toggle">
 																		<span>
-																			<i class="icon material-icons material-icon--share social_sharing_icon__icon">
-																				share
+																			<i class="icon material-icons material-icon--share social_sharing_icon__icon fas fa-share-alt">
+																		
                                   </i>
 																		</span>
 																	</div>
@@ -94,8 +101,8 @@ export class Discussion extends Component {
 																<div class="tooltip__toggle favorites__tooltip">
 																	<span class="links links--action links--with_text links--text_only favorite favorite--link favorite--bookmark">
 																		<span class="links__text">
-																			<i class="icon material-icons material-icon--bookmark_border">
-																				bookmark_border
+																			<i class="icon material-icons material-icon--bookmark_border far fa-bookmark">
+																		
                                   </i>
 																			<span class="valign_with_icon">Save</span>
 																		</span>
@@ -103,8 +110,8 @@ export class Discussion extends Component {
 																</div>
 																<div class="menu comment__menu_actions">
 																	<div class="menu__toggle">
-																		<i class="icon material-icons material-icon--more_vert">
-																			more_vert
+																		<i class="icon material-icons material-icon--more_vert fas fa-ellipsis-v">
+																		
                                 </i>
 																	</div>
 																</div>
@@ -156,22 +163,12 @@ export class Discussion extends Component {
 														</div>
 													</div>
 													<div class="comment__misc_info_actions">
-														<time class="timestamp comment__timestamp" datetime="2017-01-13T00:35:06.000Z" title="2017-01-13T00:35:06.000Z">{discussion.createdAt}</time>
+															{moment(discussion.createdAt).startOf('day').fromNow()}
 													</div>
 												</div>
 												<div class="comment__display">
 													<div class="row row--comment__body comment__body">
-														<span class="tag reply_tag">
-															<div class="flexItem flexContainer user comment__owner_details">
-																<div class="flexItem">
-																	<div class="flexItem flexContainer wd_flexWrap--nowrap d_flexWrap--nowrap wt_flexWrap--nowrap nt_flexWrap--nowrap p_flexWrap--nowrap user__info--main">
-																		<div class="flexItem wd_flexGrow--0 d_flexGrow--0 wt_flexGrow--0 nt_flexGrow--0 p_flexGrow--0 username__container">
-																			<div class="username">{discussion.username}</div>
-																		</div>
-																	</div>
-																</div>
-															</div>
-														</span>
+													
 														<div class="rich_content__container">
 															<span class="">{discussion.body}
 															</span>
@@ -180,38 +177,41 @@ export class Discussion extends Component {
 													<div class="row row--comment__footer">
 														<footer class="comment__footer">
 															<span class="links links--action links--with_text endorsement__icon">
-																<i class="icon material-icons material-icon--thumb_up endorsement__icon">thumb_up</i>
+																<i class="icon material-icons material-icon--thumb_up endorsement__icon fas fa-thumbs-up"></i>
 																<span class="links__text valign_with_icon">{discussion.like_count}</span>
 															</span>
 															<span class="links links--action links--with_text comment__reply">
-																<i class="icon material-icons material-icon--reply comment__reply">reply</i>
+																<i class="icon material-icons material-icon--reply comment__reply fas fa-reply"></i>
 																<span class="links__text valign_with_icon">Reply</span>
 															</span>
 															<div class="comment__footer--right">
 																<div class="menu social_sharing_icon__menu">
 																	<div class="menu__toggle">
 																		<span>
-																			<i class="icon material-icons material-icon--share social_sharing_icon__icon">share</i>
+																			<i class="icon material-icons material-icon--share social_sharing_icon__icon fas fa-share-alt"></i>
 																		</span>
 																	</div>
 																</div>
 																<div class="tooltip__toggle favorites__tooltip">
 																	<span class="links links--action links--with_text links--text_only favorite favorite--link favorite--bookmark">
 																		<span class="links__text">
-																			<i class="icon material-icons material-icon--bookmark_border">bookmark_border</i>
+																			<i class="icon material-icons material-icon--bookmark_border far fa-bookmark"></i>
 																			<span class="valign_with_icon">Save</span>
 																		</span>
 																	</span>
 																</div>
 																<div class="menu comment__menu_actions">
 																	<div class="menu__toggle">
-																		<i class="icon material-icons material-icon--more_vert">more_vert</i>
+																		<i class="icon material-icons material-icon--more_vert fas fa-ellipsis-v"></i>
 																	</div>
 																</div>
 															</div>
 														</footer>
+
+
 													</div>
 												</div>
+												
 											</div>
 										</div>
 									</div>
@@ -220,8 +220,11 @@ export class Discussion extends Component {
 						)
 					}
 				})}
+				
 			</div>
-
+			
+		</div>
+		
 
 		);
 	}
