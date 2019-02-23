@@ -14,7 +14,13 @@ single-page ecommerce discussions application built in ReactJS, NodeJS and Sqlit
 
 ## Demo GIFs
 ![feb-23-2019 17-07-02](https://user-images.githubusercontent.com/43450544/53292219-7a1abd80-378d-11e9-8918-c6c92106f5fb.gif)
+
+
 ![feb-23-2019 17-05-57](https://user-images.githubusercontent.com/43450544/53292213-58213b00-378d-11e9-860d-f87e2fd4c85d.gif)
+
+
+![feb-23-2019 17-08-59](https://user-images.githubusercontent.com/43450544/53292245-c239e000-378d-11e9-8692-2a570d935591.gif)
+
 
 ## Backend
 > The backend is a scalable system that provides data through its RESTful API (broweable API available), Javascript and built with following technologies: 
