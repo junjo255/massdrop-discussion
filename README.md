@@ -12,8 +12,8 @@ single-page ecommerce discussions application built in ReactJS, NodeJS and Sqlit
 - [etc](http://https://github.com/hrnyc20-agrabah/massdrop-discussion/blob/master/package.json "etc")
 
 
-## Demo Screenshots
-
+## Demo GIFs
+![feb-23-2019 17-02-25](https://user-images.githubusercontent.com/43450544/53292184-dcbf8980-378c-11e9-98f4-c5cb0741f963.gif)
 
 
 
