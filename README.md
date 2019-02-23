@@ -13,10 +13,7 @@ single-page ecommerce discussions application built in ReactJS, NodeJS and Sqlit
 
 
 ## Demo GIFs
-![feb-23-2019 17-02-25](https://user-images.githubusercontent.com/43450544/53292184-dcbf8980-378c-11e9-98f4-c5cb0741f963.gif)
-
-
-
+![feb-23-2019 17-04-23](https://user-images.githubusercontent.com/43450544/53292204-2019f800-378d-11e9-85ec-447a08e41c94.gif)
 
 
 ## Backend
