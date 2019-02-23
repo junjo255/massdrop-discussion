@@ -18,7 +18,8 @@ single-page ecommerce discussions application built in ReactJS, NodeJS and Sqlit
 
 ## Backend
 > The backend is a scalable system that provides data through its RESTful API (broweable API available), Javascript and built with following technologies: 
-- [Node.js v10.15.0](http://https://github.com/hrnyc20-agrabah/massdrop-discussion/blob/master/package.json "Node.js v10.15.0")
+![feb-23-2019 17-05-57](https://user-images.githubusercontent.com/43450544/53292213-58213b00-378d-11e9-860d-f87e2fd4c85d.gif)
+
 
 ## Installation
 Make sure you have the following software installed in your system:
