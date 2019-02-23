@@ -5,14 +5,19 @@ const path = require('path');
 const app = express();
 const sqlite3 = require('sqlite3');
 const db = require('./db/index.js')
+const cors = require('cors')
+// var request = require('request')
+
 // console.log(__dirname)
 
+app.use(cors()) 
 app.use(parser.json());
 app.use(express.urlencoded({ extended: true }))
 app.use(express.static(path.join(`${__dirname}/../public`)));
 
 
-app.get('/products/:product_id', (req, res) => {
+
+app.get('/products/:product_id',(req, res) => {
   res.sendFile(path.join(__dirname + '/../public/index.html'));
 });
 

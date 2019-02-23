@@ -26,9 +26,10 @@ class App extends Component {
 
   getDiscussions(itemId) {
     axios
-      .get(`/api/products/${itemId}/discussions`)
+      .get(`http://ec2-3-88-137-68.compute-1.amazonaws.com/api/products/${itemId}/discussions`)
+      
       .then(res => {
-        console.log(res);
+        // console.log(res);
         this.setState({ discussions: res.data });
       })
       .catch(error => console.log(error));
