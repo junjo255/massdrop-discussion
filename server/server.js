@@ -55,6 +55,11 @@ app.get(`/api/products/:product_id/discussions`, (req, res) => {
 });
 
 
+
+app.post('/', function (req, res) {
+  res.send('POST request to the homepage')
+})
+
 let port = process.env.PORT || 3005;
 
 app.listen(port, function () {

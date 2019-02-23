@@ -12,8 +12,7 @@ i, cite, em, var, address, dfn {
     font-style: italic !important;
 }
 
-
-li:hover {
+.hover_dropdown:hover {
     color: #849493;
     font-size: 12px;
 }
@@ -368,7 +367,8 @@ li:hover {
 
 }
 
-input[type=text], .form_text_field {
+
+.form_text_field {
     background: #fff;
     border: 1px solid #849493;
     border-radius: 3px;
@@ -840,6 +840,24 @@ img.responsive {
 }
 
 
+.comment__misc_info_actions{
+    padding-right: 15px;
+}
+
+
+svg:not(:root).svg-inline--fa{
+    padding-right:7px;
+}
+
+.svg-inline--fa.fa-w-6{
+    width:.5em; 
+}
+
+.svg-inline--fa.fa-w-14 {
+    width:1em;
+    padding-top:5px;
+}
+
 
 /* =========================== Footer thread - RIGHT SIDE =========================== */
 .comment__footer .comment__footer--right {
@@ -850,6 +868,8 @@ img.responsive {
     float: right;
     position: absolute;
     right: 0;
+    width: 126px;
+    padding-left:6px;
 }
 
 .menu {
