@@ -1,8 +1,36 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# FEC Project
 
-## Available Scripts
 
-In the project directory, you can run:
+single-page ecommerce discussions application built in ReactJS, NodeJS and Sqlite3. 
+
+
+
+## Frontend
+
+> The frontend is a fast, and interactive Single-Page-Application(SPA), written in ES6 Javascript and built with following technologies:
+- [ReactJS v16.8.3](http://reactjs.org "ReactJS v16.8.3")
+- [etc](http://https://github.com/hrnyc20-agrabah/massdrop-discussion/blob/master/package.json "etc")
+
+
+## Demo Screenshots
+
+
+
+
+
+
+## Backend
+> The backend is a scalable system that provides data through its RESTful API (broweable API available), Javascript and built with following technologies: 
+- [Node.js v10.15.0](http://https://github.com/hrnyc20-agrabah/massdrop-discussion/blob/master/package.json "Node.js v10.15.0")
+
+## Installation
+Make sure you have the following software installed in your system:
+- Javascript
+- Node.js
+- NPM 
+- Git
+
+
 
 ### `npm start`
 
