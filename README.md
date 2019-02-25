@@ -9,7 +9,7 @@ single-page ecommerce discussions application built in ReactJS, NodeJS and Sqlit
 
 > The frontend is a fast, and interactive Single-Page-Application(SPA), written in ES6 Javascript and built with following technologies:
 - [ReactJS v16.8.3](http://reactjs.org "ReactJS v16.8.3")
-- [etc](http://https://github.com/hrnyc20-agrabah/massdrop-discussion/blob/master/package.json "etc")
+- [etc](https://github.com/hrnyc20-agrabah/massdrop-discussion/blob/master/package.json "etc")
 
 
 ## Demo GIFs
@@ -24,7 +24,9 @@ single-page ecommerce discussions application built in ReactJS, NodeJS and Sqlit
 
 ## Backend
 > The backend is a scalable system that provides data through its RESTful API (broweable API available), Javascript and built with following technologies: 
-
+- [Node JS v10.15.0] (https://nodejs.org/en/ "Node JS v10.15.0")
+- [Sqlite3] (https://www.sqlite.org/index.html "Sqlite3")
+- [etc](https://github.com/hrnyc20-agrabah/massdrop-discussion/blob/master/package.json "etc")
 
 ## Installation
 Make sure you have the following software installed in your system:
