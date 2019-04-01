@@ -3,6 +3,8 @@
 
 single-page ecommerce discussions application built in ReactJS, NodeJS and Sqlite3. 
 
+![Project Layout (3)](https://user-images.githubusercontent.com/43450544/55336661-53763380-546b-11e9-8f44-b95ad551c436.jpg)
+
 
 
 ## Frontend
