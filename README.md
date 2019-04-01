@@ -3,10 +3,10 @@
 
 single-page ecommerce discussions application built in ReactJS, NodeJS and Sqlite3. 
 
-![Project Layout (3)](https://user-images.githubusercontent.com/43450544/55336661-53763380-546b-11e9-8f44-b95ad551c436.jpg)
-
-
-
+<img width="967" alt="Screen Shot 2019-04-01 at 10 49 28 AM" src="https://user-images.githubusercontent.com/43450544/55337021-e7e09600-546b-11e9-81c6-23ca73875ea4.png">
+ 
+ 
+ 
 ## Frontend
 
 > The frontend is a fast, and interactive Single-Page-Application(SPA), written in ES6 Javascript and built with following technologies:
