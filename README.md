@@ -25,7 +25,7 @@ single-page ecommerce discussions application built in ReactJS, NodeJS and Sqlit
 
 
 ## Backend
-> The backend is a scalable system that provides data through its RESTful API (broweable API available), Javascript and built with following technologies: 
+> The backend is a scalable system that provides data through its RESTful API (browsable API available), Javascript and built with following technologies: 
 - [Node JS v10.15.0](http://https://nodejs.org/en/ "Node JS v10.15.0")
 - [Sqlite3](https://www.sqlite.org/index.html "Sqlite3")
 - [etc](https://github.com/hrnyc20-agrabah/massdrop-discussion/blob/master/package.json "etc")
@@ -67,23 +67,6 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-
-#####  Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-#####  Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-#####  Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-
-#####  Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
 
 
 #####  massdrop-discussion
