@@ -34,7 +34,6 @@ single-page ecommerce discussions application built in ReactJS, NodeJS and Sqlit
 
 ## Installation
 Make sure you have the following software installed in your system:
-- Javascript
 - Node.js
 - NPM 
 - Git
